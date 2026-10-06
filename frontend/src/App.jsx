@@ -151,11 +151,7 @@ async function extractTextWithBrowserOcr(image) {
   }
 }
 
-const TEAM_MEMBERS = [
-  { name: 'Ankit Anand', role: 'Full Stack Developer', lead: true },
-  { name: 'Anubhav Gangwar', role: 'Backend Developer' },
-  { name: 'Manjeet Kumar', role: 'Software Testing' },
-]
+
 
 const MODEL_SNAPSHOT = [
   { value: '98.75%', label: 'Validation Accuracy' },
@@ -1493,7 +1489,7 @@ function App() {
         <div className="feedback-contact">
           <p>
             📧 Have detailed feedback, bug reports, or ideas? We would love to hear from you at{' '}
-            <a href="mailto:ankitanand.works@gmail.com?subject=Fake%20News%20Detection%20Feedback">ankitanand.works@gmail.com</a>.
+            <a href="mailto:abhiprabha0829@gmail.com?subject=Fake%20News%20Detection%20Feedback">abhiprabha0829@gmail.com</a>.
           </p>
         </div>
 
@@ -1649,7 +1645,7 @@ function App() {
 
   const renderSocialLinks = (className = 'home-footer-socials') => (
     <div className={className} aria-label="Social links">
-      <a className="social-link social-github" href="https://github.com/ankit-xo/FakeNewsDetection" target="_blank" rel="noreferrer" aria-label="GitHub">
+      <a className="social-link social-github" href="" target="_blank" rel="noreferrer" aria-label="GitHub">
         <svg viewBox="0 0 24 24" aria-hidden="true">
           <path d="M12 .5A11.5 11.5 0 0 0 .5 12.2c0 5.2 3.4 9.6 8 11.2.6.1.8-.3.8-.6v-2c-3.3.7-4-1.4-4-1.4-.6-1.5-1.3-1.9-1.3-1.9-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.4-5.5-6.2 0-1.4.5-2.6 1.3-3.6-.1-.3-.6-1.6.1-3.3 0 0 1.1-.4 3.7 1.3 1.1-.3 2.2-.4 3.3-.4 1.1 0 2.2.1 3.3.4 2.6-1.7 3.7-1.3 3.7-1.3.7 1.7.2 3 .1 3.3.8 1 1.3 2.2 1.3 3.6 0 4.8-2.8 5.9-5.5 6.2.4.4.8 1 .8 2.1v3c0 .3.2.7.8.6 4.6-1.6 8-6 8-11.2A11.5 11.5 0 0 0 12 .5z" />
         </svg>
