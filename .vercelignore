@@ -1,0 +1,16 @@
+.git
+.github
+.vscode
+backend
+dataset
+docs
+frontend/dist
+frontend/node_modules
+venv
+**/__pycache__
+*.log
+.gitattributes
+Dockerfile
+render.yaml
+run_dev.py
+requirements.txt
