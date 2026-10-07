@@ -1,0 +1,158 @@
+:root {
+  --bg: #fafaf8;
+  --bg-hover: #f1f1ed;
+  --surface: #ffffff;
+  --border: #e4e4df;
+  --border-strong: #cfcfc8;
+
+  --text: #1f2328;
+  --text-muted: #5c636e;
+  --text-faint: #858b95;
+
+  --accent: #2457c5;
+  --accent-hover: #1c47a6;
+  --accent-soft: #eaf0fb;
+
+  --real: #1f6a46;
+  --real-bg: #f0f7f2;
+  --real-border: #d0e4d8;
+  --fake: #a23b36;
+  --fake-bg: #fcf3f2;
+  --fake-border: #f0d7d5;
+
+  --radius: 8px;
+  --radius-lg: 12px;
+  --container: 1040px;
+
+  --font: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+ol {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Layout helpers */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  flex: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-narrow {
+  max-width: 760px;
+}
+
+.page {
+  padding: 40px 0 72px;
+}
+
+.page-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.page-lead {
+  margin-top: 6px;
+  color: var(--text-muted);
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .page {
+    padding: 28px 0 56px;
+  }
+
+  .page-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

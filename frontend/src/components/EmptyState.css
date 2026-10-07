@@ -1,0 +1,20 @@
+.empty-state {
+  padding: 48px 20px;
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+.empty-state h2 {
+  font-size: 1.0625rem;
+  font-weight: 600;
+}
+
+.empty-state p {
+  margin-top: 4px;
+  color: var(--text-muted);
+}
+
+.empty-state .btn {
+  margin-top: 20px;
+}

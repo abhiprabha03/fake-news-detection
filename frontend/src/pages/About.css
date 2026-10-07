@@ -1,0 +1,36 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.about section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.about h3 {
+  margin-top: 6px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
+.about p {
+  color: var(--text-muted);
+}
+
+.credits {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.credits span {
+  color: var(--text-muted);
+}
